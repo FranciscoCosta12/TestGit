@@ -13,6 +13,10 @@ public class PortaContentores extends Navio{
 
     private int contentores;
     
+    /**
+     *
+     * @param matricula
+     */
     public PortaContentores(String matricula) {
         super(matricula);
     }
