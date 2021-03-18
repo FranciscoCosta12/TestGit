@@ -15,10 +15,17 @@ import java.util.List;
 public class Porto {
     private List<Navio> navios;
     
+    /**
+     * Inicia a classe com um ArrayList novo
+     */
     public Porto(){
         navios = new ArrayList<>();
     }
     
+    /**
+     *
+     * Verifica se existe o navio, se não, adiciona ao arrayList
+     */
     public void addNavio(Navio n){
         if(!procura(n)){
             navios.add(n);
@@ -27,12 +34,21 @@ public class Porto {
         }
     }
 
+    /**
+     *
+     * Verifica em cada posição do ArrayList se as matriculas são iguais
+     * iguais = true
+     * diferentes = false
+     */
     private boolean procura(Navio n) {
         for(Navio nv : navios)
             if(nv.getMatricula().equals(n.getMatricula())) return true;
         return false;
     }
     
+    /**
+     * Lista o ArrayList
+     */
     public void listNavios(){
         for(Navio n:navios)
             System.out.println(n);
