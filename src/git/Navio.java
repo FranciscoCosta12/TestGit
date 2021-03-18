@@ -14,10 +14,18 @@ public class Navio {
     private String nome;
     private float comprimento;
     
+    /**
+     *
+     * @param matricula
+     */
     public Navio(String matricula){
         this.matricula = matricula;
     }
     
+    /**
+     *
+     * @return the matricula
+     */
     public String getMatricula(){
         return matricula;
     }
